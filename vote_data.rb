@@ -3,7 +3,7 @@ require 'csv'
 
 class VoteDataRow
     attr_accessor :date, :voteno, :bill, :vote, :mpid, :first_name, :surname, :party, :url
-
+    
     def initialize(row)
         @date = Date.parse(row['date'])
         @voteno = row['voteno'].to_i
